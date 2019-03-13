@@ -92,7 +92,7 @@ p {
 .navbar-active {
   padding-bottom: 200px;
   border-bottom: 1px solid #00e0d0;
-  transition: .4s; }
+  transition: 0.4s; }
 
 .navbar__links-active {
   display: block; }
@@ -174,7 +174,7 @@ p {
 .slick-dots {
   margin: 0;
   margin-top: 13%;
-  margin-bottom: 7%;
+  margin-bottom: 9%;
   padding: 0;
   list-style: none;
   width: 100%;
@@ -196,6 +196,73 @@ p {
       height: 10px;
       border-radius: 50%; }
 
+.about {
+  display: flex;
+  flex-direction: column; }
+
+.about__info {
+  margin-top: 4.45%;
+  margin-bottom: 4.45%;
+  max-width: 940px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center; }
+
+.about__info_img {
+  max-width: 380px;
+  width: 100%;
+  text-align: center; }
+
+.about__info_sub {
+  color: #413d4b;
+  max-width: 540px; }
+  .about__info_sub h2 {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+    text-transform: uppercase; }
+  .about__info_sub p {
+    margin-top: 0px;
+    margin-bottom: 3rem; }
+
+.about__video {
+  width: 100%;
+  position: relative; }
+
+.plyr--stopped.plyr__poster-enabled .plyr__poster {
+  opacity: 0; }
+
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+  position: absolute;
+  z-index: 100; }
+
+.plyr__control--overlaid {
+  background: transparent;
+  border: 3px solid white;
+  width: 100px;
+  height: 100px; }
+
+.plyr__control--overlaid svg {
+  left: 23px;
+  position: relative; }
+
+.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+  background: #00e0d0;
+  color: #fff; }
+
+.plyr button {
+  width: 100px; }
+
+.video-filter {
+  background-image: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+  opacity: 0.851;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0; }
+
 @media screen and (max-width: 875px) {
   html {
     font-size: 12px; }
@@ -209,4 +276,11 @@ p {
   .slider-element-container {
     margin: 0 10px; }
   .navbar__burger {
-    display: block; } }
+    display: block; }
+  .about__info {
+    flex-direction: column;
+    align-items: center; }
+  .about__info_img {
+    display: none; }
+  .about__info_sub {
+    max-width: 90%; } }

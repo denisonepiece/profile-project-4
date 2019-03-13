@@ -4,3 +4,7 @@ $('.navbar__burger').on('click', function(e) {
     $('.navbar__links').toggleClass('navbar__links-active');
     $('.navbar').toggleClass('navbar-active')
   });
+
+const player = new Plyr('#player', {
+    controls: ['play-large', 'caption'],
+});
