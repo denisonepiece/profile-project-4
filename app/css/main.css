@@ -341,3 +341,10 @@ p {
     display: none; }
   .about__info_sub {
     max-width: 90%; } }
+
+@media screen and (max-width: 600px) {
+  .expertise .items .row-top, .expertise .items .row-bottom {
+    flex-direction: column;
+    border: none; }
+  .expertise .items .one-item {
+    border: none; } }
