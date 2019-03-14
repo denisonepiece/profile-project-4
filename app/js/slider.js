@@ -11,6 +11,7 @@ $(document).ready(function() {
     $('.feedback__slider_text').slick({
         dots: false,
         arrows: false,
+        asNavFor: '.feedback__slider_img'
     });
 
     $('.feedback__slider_img').slick({
