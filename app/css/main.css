@@ -511,6 +511,61 @@ p {
     top: 30px;
     right: 0; }
 
+.contact {
+  display: flex;
+  justify-content: center; }
+  .contact .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 940px;
+    width: 95%;
+    justify-content: space-between;
+    margin-bottom: 4.43%; }
+    .contact .container h2 {
+      margin-top: 4.43%;
+      color: #413d4b;
+      margin-bottom: 35px; }
+  .contact .contact__form {
+    max-width: 460px;
+    width: 100%;
+    margin-right: 50px; }
+    .contact .contact__form form {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.4em;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column; }
+    .contact .contact__form input,
+    .contact .contact__form textarea {
+      border: 1px solid #e5e5e5;
+      margin-bottom: 25px;
+      color: #e5e5e5; }
+    .contact .contact__form input {
+      padding-left: 20px;
+      height: 45px; }
+    .contact .contact__form textarea {
+      resize: none;
+      height: 200px;
+      padding: 20px; }
+    .contact .contact__form .btn {
+      cursor: pointer; }
+  .contact .contact__client {
+    max-width: 380px;
+    width: 100%; }
+    .contact .contact__client .contact__labels {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    .contact .contact__client .contact__labels_left, .contact .contact__client .contact__labels_right {
+      width: 160px;
+      text-align: center; }
+    .contact .contact__client .block_for_label {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+
 @media screen and (max-width: 1605px) {
   .works .works__items {
     max-width: 1140px; } }
@@ -535,7 +590,13 @@ p {
   .about__info_img {
     display: none; }
   .about__info_sub {
-    max-width: 90%; } }
+    max-width: 90%; }
+  .contact .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+    .contact .container .contact__form {
+      margin-right: 0; } }
 
 @media screen and (max-width: 600px) {
   .expertise .items .row-top,
@@ -543,4 +604,7 @@ p {
     flex-direction: column;
     border: none; }
   .expertise .items .one-item {
-    border: none; } }
+    border: none; }
+  .contact .contact__client .contact__labels {
+    flex-wrap: wrap;
+    justify-content: center; } }

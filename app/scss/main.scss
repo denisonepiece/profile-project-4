@@ -754,7 +754,7 @@ p {
         right: 0;
     }
 
-   
+
 
 
 
@@ -762,6 +762,94 @@ p {
 
 // FEEDBACK SECTION END
 
+// CONTACT SECTION START 
+
+.contact {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: $width;
+        width: 95%;
+        justify-content: space-between;
+        margin-bottom: 4.43%;
+
+        h2 {
+            margin-top: 4.43%;
+            color:$forwhite;
+            margin-bottom: 35px;
+        }
+    }
+
+    .contact__form {
+        max-width: 460px;
+        width: 100%;
+        margin-right: 50px;
+
+        form {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4em;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        input,
+        textarea {
+            border: 1px solid #e5e5e5;
+            margin-bottom: 25px;
+            color: #e5e5e5;
+        }
+
+        input {
+            padding-left: 20px;
+            height: 45px;
+        }
+
+        textarea {
+            resize: none;
+            height: 200px;
+            padding: 20px;
+        }
+
+        .btn {
+            cursor: pointer;
+        }
+    }
+
+
+
+    .contact__client {
+        max-width: 380px;
+        width: 100%;
+
+        .contact__labels {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+
+        .contact__labels_left, .contact__labels_right {
+            width: 160px;
+            text-align: center;
+        }
+
+        .block_for_label {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+    }
+}
+
+// CONTACT SECTION END
 
 // MAIN END
 
@@ -774,6 +862,7 @@ p {
 }
 
 @media screen and (max-width: 875px) {
+    
     html {
         font-size: 12px;
     }
@@ -813,6 +902,18 @@ p {
     .about__info_sub {
         max-width: 90%;
     }
+
+    .contact .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .contact__form {
+            margin-right: 0;
+        }
+    }
+
+
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -825,6 +926,11 @@ p {
 
     .expertise .items .one-item {
         border: none;
+    }
+
+    .contact .contact__client .contact__labels {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
